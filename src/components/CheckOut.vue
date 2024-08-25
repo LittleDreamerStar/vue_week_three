@@ -8,11 +8,12 @@ const props = defineProps<{
 </script>
 
 <template>
-  <div class="d-flex" :style="{ flexWrap: 'wrap', gap: '10px', width: '1300px', margin: '0 auto' }">
+  <div class="d-flex" :style="{ flexWrap: 'wrap' }">
     <div
       v-for="{ id, checkOutList, commit, allTotal } in props.checkOut"
       :key="id"
       class="row m-3 col-3"
+      style="flex:auto"
     >
       <div class="card">
         <div class="card-body">
